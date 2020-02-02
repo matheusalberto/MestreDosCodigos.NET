@@ -2139,6 +2139,9 @@
       "MestreDosCodigos_POO_12/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MestreDosCodigos_Util": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MestreDosCodigos_POO_12.dll": {}
         },
@@ -6876,6 +6879,7 @@
       "MestreDosCodigos_POO_10 >= 1.0.0",
       "MestreDosCodigos_POO_11 >= 1.0.0",
       "MestreDosCodigos_POO_12 >= 1.0.0",
+      "MestreDosCodigos_Util >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "coverlet.collector >= 1.0.1",
       "xunit >= 2.4.0",
@@ -6948,6 +6952,9 @@
             },
             "C:\\desenv\\MestreDosCodigos.NET\\MestreDosCodigos_POO_9\\MestreDosCodigos_POO_10.csproj": {
               "projectPath": "C:\\desenv\\MestreDosCodigos.NET\\MestreDosCodigos_POO_9\\MestreDosCodigos_POO_10.csproj"
+            },
+            "C:\\desenv\\MestreDosCodigos.NET\\MestreDosCodigos_Util\\MestreDosCodigos_Util.csproj": {
+              "projectPath": "C:\\desenv\\MestreDosCodigos.NET\\MestreDosCodigos_Util\\MestreDosCodigos_Util.csproj"
             }
           }
         }

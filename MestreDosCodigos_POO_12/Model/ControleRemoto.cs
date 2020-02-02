@@ -1,4 +1,6 @@
-﻿namespace MestreDosCodigos_POO_12.Model
+﻿using MestreDosCodigos_Util.Resources;
+
+namespace MestreDosCodigos_POO_12.Model
 {
     public class ControleRemoto
     {
@@ -52,7 +54,7 @@
             var canalExiste = this.Televisao.Canais.Exists(x => x == canal);
             if (!canalExiste)
             {
-                throw new System.Exception($"Canal {canal} Inexistente");
+                throw new System.Exception(string.Format(Resources.CanalInexistente, canal));
             }
 
             this.Televisao.CanalAtual = canal;

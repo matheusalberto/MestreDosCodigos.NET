@@ -28,9 +28,9 @@ namespace MestreDosCodigos_POO_11.Model
 
         public override void Sacar(double valor)
         {
-            if ((valor - this.TaxaDeOperacao) >= this.Saldo)
+            if ((valor + this.TaxaDeOperacao) <= this.Saldo)
             {
-                this.Saldo -= (valor - this.TaxaDeOperacao);
+                this.Saldo -= (valor + this.TaxaDeOperacao);
             }
 
             //throw new Exception("Operação Inválida, o valor = a taxa de instalação não pode ser maior do que seu saldo!");

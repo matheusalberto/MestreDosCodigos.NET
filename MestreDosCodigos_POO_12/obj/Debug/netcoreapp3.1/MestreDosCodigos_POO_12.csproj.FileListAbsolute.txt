@@ -8,3 +8,7 @@ C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\obj\Debug\netcoreapp3.1\M
 C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\obj\Debug\netcoreapp3.1\MestreDosCodigos_POO_12.AssemblyInfo.cs
 C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\obj\Debug\netcoreapp3.1\MestreDosCodigos_POO_12.dll
 C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\obj\Debug\netcoreapp3.1\MestreDosCodigos_POO_12.pdb
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\bin\Debug\netcoreapp3.1\MestreDosCodigos_Util.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\bin\Debug\netcoreapp3.1\MestreDosCodigos_Util.pdb
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\obj\Debug\netcoreapp3.1\MestreDosCodigos_POO_12.csprojAssemblyReference.cache
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_POO_12\obj\Debug\netcoreapp3.1\MestreDosCodigos_POO_12.csproj.CopyComplete

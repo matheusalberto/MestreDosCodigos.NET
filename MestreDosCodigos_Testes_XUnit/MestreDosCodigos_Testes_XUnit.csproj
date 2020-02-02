@@ -27,6 +27,7 @@
     <ProjectReference Include="..\MestreDosCodigos_POO_11\MestreDosCodigos_POO_11.csproj" />
     <ProjectReference Include="..\MestreDosCodigos_POO_12\MestreDosCodigos_POO_12.csproj" />
     <ProjectReference Include="..\MestreDosCodigos_POO_9\MestreDosCodigos_POO_10.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Util\MestreDosCodigos_Util.csproj" />
   </ItemGroup>
 
 </Project>

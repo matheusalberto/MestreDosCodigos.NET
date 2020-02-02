@@ -6,3 +6,5 @@ C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Util\bin\Debug\netcoreapp3.1\Mes
 C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Util\obj\Debug\netcoreapp3.1\MestreDosCodigos_Util.dll
 C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Util\obj\Debug\netcoreapp3.1\MestreDosCodigos_Util.pdb
 C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Util\obj\Debug\netcoreapp3.1\MestreDosCodigos_Util.csprojAssemblyReference.cache
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Util\obj\Debug\netcoreapp3.1\MestreDosCodigos_Util.Resources.Resources.resources
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Util\obj\Debug\netcoreapp3.1\MestreDosCodigos_Util.csproj.GenerateResource.cache

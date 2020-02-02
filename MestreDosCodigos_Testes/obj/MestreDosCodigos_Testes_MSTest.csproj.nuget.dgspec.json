@@ -622,7 +622,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\desenv\\MestreDosCodigos.NET\\MestreDosCodigos_Util\\MestreDosCodigos_Util.csproj": {
+                "projectPath": "C:\\desenv\\MestreDosCodigos.NET\\MestreDosCodigos_Util\\MestreDosCodigos_Util.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -21,6 +21,7 @@
           "MestreDosCodigos_POO_10": "1.0.0",
           "MestreDosCodigos_POO_11": "1.0.0",
           "MestreDosCodigos_POO_12": "1.0.0",
+          "MestreDosCodigos_Util": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "coverlet.collector": "1.0.1",
           "xunit": "2.4.0",
@@ -1473,6 +1474,9 @@
         }
       },
       "MestreDosCodigos_POO_12/1.0.0": {
+        "dependencies": {
+          "MestreDosCodigos_Util": "1.0.0"
+        },
         "runtime": {
           "MestreDosCodigos_POO_12.dll": {}
         }
