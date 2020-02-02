@@ -6,13 +6,13 @@ Aqui serão listadas todas as questões, suas respostas (perguntas teóricas) e 
 ## Perguntas teóricas de introdução
 
 1. Em quais linguagens o C# foi inspirado?
-_O C# foi baseada nas linguagens de programação C, C++ e Java. Em relação a linguagem C, o C# tem foco na compilação de soluções de alto nível, já a linguagem C é voltada para o desenvolvimento de baixo nível. Outras comparações, de acordo com MSDN (2012), o C#, simplifica de modo significativo a complexidade do C++ e introduz novos elementos não disponíveis no Java, tais como: tipos primitivos com valores nulos, delegações, expressões lambda e acesso direto à memória._
+- _O C# foi baseada nas linguagens de programação C, C++ e Java. Em relação a linguagem C, o C# tem foco na compilação de soluções de alto nível, já a linguagem C é voltada para o desenvolvimento de baixo nível. Outras comparações, de acordo com MSDN (2012), o C#, simplifica de modo significativo a complexidade do C++ e introduz novos elementos não disponíveis no Java, tais como: tipos primitivos com valores nulos, delegações, expressões lambda e acesso direto à memória._
 
 2. Inicialmente o C# foi criado para qual finalidade?
-_O C# surgiu com a finalidade de possibilitar a criação de soluções executáveis sobre a plataforma .NET Framework, com o intuito de flexibilizar o desenvolvimento de aplicativos. Dessa maneira, o desenvolvedor não cria soluções para um dispositivo eletrônico específico, e sim para a plataforma .NET Framework._
+- _O C# surgiu com a finalidade de possibilitar a criação de soluções executáveis sobre a plataforma .NET Framework, com o intuito de flexibilizar o desenvolvimento de aplicativos. Dessa maneira, o desenvolvedor não cria soluções para um dispositivo eletrônico específico, e sim para a plataforma .NET Framework._
 
 3. Quais os principais motivos para a Microsoft ter migrado para o Core?
-_Diferentemente do .Net Framework, o .NET Core é multiplataforma. Possui alta performance e sistemas escaláveis. O .NET Core tem um intuito do uso de microsserviços e possuir maior modularidade para o uso de containeres._
+- _Diferentemente do .Net Framework, o .NET Core é multiplataforma. Possui alta performance e sistemas escaláveis. O .NET Core tem um intuito do uso de microsserviços e possuir maior modularidade para o uso de containeres._
 
 4. Cite as principais diferenças entre .Net Full Framework e .Net Core.
 * _Modelos de aplicativos - .NET Core não dão suporte a todos os .NET Framework modelos de aplicativos. Ele não dá suporte especificamente a Web Forms do ASP.NET e a ASP.NET MVC, mas dá suporte ao ASP.NET Core MVC. E, a partir do .NET Core 3,0, o .NET Core também oferece suporte ao WPF e Windows Forms somente no Windows._
@@ -72,24 +72,24 @@ _Diferentemente do .Net Framework, o .NET Core é multiplataforma. Possui alta p
 
 1. Responda e demonstre no código os itens abaixo:
 * O que é POO?
-Programação Orientada a Objetos. É um padrão de desenvolvimento que é seguidos por muitas linguagens como C# e Java. E outras palavras, POO é um paradigma de programação baseado no conceito de objetos, que contém dados na forma de campos (atributos) e procedimentos na forma de métodos. Tais objetos podem interagir entre si.
+-- Programação Orientada a Objetos. É um padrão de desenvolvimento que é seguidos por muitas linguagens como C# e Java. E outras palavras, POO é um paradigma de programação baseado no conceito de objetos, que contém dados na forma de campos (atributos) e procedimentos na forma de métodos. Tais objetos podem interagir entre si.
 * O que é polimorfismo?
-É um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma de suas classes derivadas.	
+-- É um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma de suas classes derivadas.	
 Por exemplo, temos 3 contas, ContaA, ContaB e ContaC, e cada uma tem uma Taxa diferente. Sendo assim, todas as contas derivariam da classe Taxa, e implementariam da maneira mais cabível o cálculo da taxa. 
 * O que é abstração?
-Abstração é a habilidade de concentrar nos aspectos essenciais de um contexto qualquer, ignorando características menos importantes ou acidentais. No aspecto de POO, uma classe abstrata é desenvolvida para representar entidades e conceitos abstratos. A classe abstrata é sempre uma superclasse que não possui instâncias. Ela define um modelo (template) para uma funcionalidade e fornece uma implementação incompleta - a parte genérica dessa funcionalidade - que é compartilhada por um grupo de classes derivadas. Cada uma das classes derivadas, completa a funcionalidade da classe abstrata adicionando um comportamento específico.	
+-- Abstração é a habilidade de concentrar nos aspectos essenciais de um contexto qualquer, ignorando características menos importantes ou acidentais. No aspecto de POO, uma classe abstrata é desenvolvida para representar entidades e conceitos abstratos. A classe abstrata é sempre uma superclasse que não possui instâncias. Ela define um modelo (template) para uma funcionalidade e fornece uma implementação incompleta - a parte genérica dessa funcionalidade - que é compartilhada por um grupo de classes derivadas. Cada uma das classes derivadas, completa a funcionalidade da classe abstrata adicionando um comportamento específico.	
 É utilizada para a definição de entidades do mundo real. Sendo onde são criadas as classes. Essas entidades são consideradas tudo que é real, tendo como consideração as suas características e ações.
 * O que é encapsulamento?
-É a técnica utilizada para esconder uma ideia, ou seja, não expôr detalhes internos para o usuário, tornando partes do sistema mais independentes possível. Por exemplo, quando um controle remoto estraga apenas é trocado ou consertado o controle e não a televisão inteira. Em POO, utiliza-se atributos privados, e getters e setters para acessar os mesmos.
+-- É a técnica utilizada para esconder uma ideia, ou seja, não expôr detalhes internos para o usuário, tornando partes do sistema mais independentes possível. Por exemplo, quando um controle remoto estraga apenas é trocado ou consertado o controle e não a televisão inteira. Em POO, utiliza-se atributos privados, e getters e setters para acessar os mesmos.
 * Quando usar uma classe abstrata e quando devo usar uma interface?
-Uma interface não possui implementação, apenas assinatura. A interface indica o que deve ser implementado. É como se fosse um contrato, que indica o que deve ser cumprido. Já as classes abstratas servem como uma classe base, que pode conter atributos e métodos completos. Porém, um ou mais destes métodos devem ser incompletos.
+-- Uma interface não possui implementação, apenas assinatura. A interface indica o que deve ser implementado. É como se fosse um contrato, que indica o que deve ser cumprido. Já as classes abstratas servem como uma classe base, que pode conter atributos e métodos completos. Porém, um ou mais destes métodos devem ser incompletos.
 * O que faz as interfaces IDisposable, IComparable, ICloneable e IEnumerable?
-IDisposable: Fornece um mecanismo para liberar recursos não gerenciados.
-IComparable: Define um método de comparação de tipo específico generalizado que implementa uma classe ou um tipo de valor para solicitar ou classificar suas instâncias.
-ICloneable: Dá suporte à clonagem, que cria uma nova instância de uma classe com o mesmo valor de uma instância existente.
-IEnumerable: Expõe um enumerador que dá suporte a uma iteração simples em uma coleção não genérica.
+-- IDisposable: Fornece um mecanismo para liberar recursos não gerenciados.
+-- IComparable: Define um método de comparação de tipo específico generalizado que implementa uma classe ou um tipo de valor para solicitar ou classificar suas instâncias.
+-- ICloneable: Dá suporte à clonagem, que cria uma nova instância de uma classe com o mesmo valor de uma instância existente.
+-- IEnumerable: Expõe um enumerador que dá suporte a uma iteração simples em uma coleção não genérica.
 * Existe herança múltipla (de classes) em C#?
-Não
+-- Não
 
 2. Crie uma classe para representar uma pessoa
 * Crie os atributos privados de nome, data de nascimento e altura.
@@ -121,6 +121,6 @@ Não
 
 2. Escolha dois frameworks e faça testes unitários para pelo menos dois exercícios em cada framework.
 
-## BONUS
+## Bônus
 
 1. Utilizando qualquer exercício, execute-o no Linux.
