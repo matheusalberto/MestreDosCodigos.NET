@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MestreDosCodigos\MestreDosCodigos_Console_1.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_2\MestreDosCodigos_Console_2.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_3\MestreDosCodigos_Console_3.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_4\MestreDosCodigos_Console_4.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_5\MestreDosCodigos_Console_5.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_6\MestreDosCodigos_Console_6.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_7\MestreDosCodigos_Console_7.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_8\MestreDosCodigos_Console_8.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_Console_9\MestreDosCodigos_Console_9.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_POO_11\MestreDosCodigos_POO_11.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_POO_12\MestreDosCodigos_POO_12.csproj" />
+    <ProjectReference Include="..\MestreDosCodigos_POO_9\MestreDosCodigos_POO_10.csproj" />
+  </ItemGroup>
+
+</Project>

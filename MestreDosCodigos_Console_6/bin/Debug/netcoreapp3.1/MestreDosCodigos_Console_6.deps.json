@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MestreDosCodigos_Console_6/1.0.0": {
+        "runtime": {
+          "MestreDosCodigos_Console_6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MestreDosCodigos_Console_6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

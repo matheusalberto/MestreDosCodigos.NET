@@ -1,0 +1,14 @@
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.csprojAssemblyReference.cache
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.AssemblyInfoInputs.cache
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.AssemblyInfo.cs
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.exe
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.deps.json
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.runtimeconfig.json
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.runtimeconfig.dev.json
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.pdb
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Util.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\bin\Debug\netcoreapp3.1\MestreDosCodigos_Util.pdb
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.csproj.CopyComplete
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_4\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_4.pdb

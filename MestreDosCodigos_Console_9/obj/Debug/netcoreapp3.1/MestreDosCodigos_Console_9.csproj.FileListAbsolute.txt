@@ -1,0 +1,13 @@
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.exe
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.deps.json
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.runtimeconfig.json
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.runtimeconfig.dev.json
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.pdb
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Util.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\bin\Debug\netcoreapp3.1\MestreDosCodigos_Util.pdb
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.AssemblyInfoInputs.cache
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.AssemblyInfo.cs
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.csproj.CopyComplete
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.dll
+C:\desenv\MestreDosCodigos.NET\MestreDosCodigos_Console_9\obj\Debug\netcoreapp3.1\MestreDosCodigos_Console_9.pdb
