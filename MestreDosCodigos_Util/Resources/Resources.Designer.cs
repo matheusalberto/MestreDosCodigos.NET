@@ -61,11 +61,74 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Canal Atual: {0}.
+        /// </summary>
+        public static string CanalAtual {
+            get {
+                return ResourceManager.GetString("CanalAtual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Canal {0} Inexistente.
         /// </summary>
         public static string CanalInexistente {
             get {
                 return ResourceManager.GetString("CanalInexistente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operação Inválida, o valor deve ser maior do que a taxa de operação!.
+        /// </summary>
+        public static string DepositoContaCorrentInvalido {
+            get {
+                return ResourceManager.GetString("DepositoContaCorrentInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Número da Conta: {0}.
+        /// </summary>
+        public static string NumeroConta {
+            get {
+                return ResourceManager.GetString("NumeroConta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saldo: R$ {0}.
+        /// </summary>
+        public static string Saldo {
+            get {
+                return ResourceManager.GetString("Saldo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operação Inválida, o valor + a taxa de instalação não pode ser maior do que seu saldo!.
+        /// </summary>
+        public static string SaqueContaCorrenteInvalido {
+            get {
+                return ResourceManager.GetString("SaqueContaCorrenteInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taxa de Operação: R$ {0}.
+        /// </summary>
+        public static string TaxaOperacao {
+            get {
+                return ResourceManager.GetString("TaxaOperacao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume: {0}.
+        /// </summary>
+        public static string VolumeAtual {
+            get {
+                return ResourceManager.GetString("VolumeAtual", resourceCulture);
             }
         }
     }

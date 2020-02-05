@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MestreDosCodigos_Util.Resources;
+using System;
 using System.Collections.Generic;
 
 namespace MestreDosCodigos_POO_12.Model
@@ -11,8 +12,8 @@ namespace MestreDosCodigos_POO_12.Model
 
         public void MostrarDados()
         {
-            Console.WriteLine($"Canal Atual: {this.CanalAtual}");
-            Console.WriteLine($"Volume: {this.Volume}");
+            Console.WriteLine(string.Format(Resources.CanalAtual, CanalAtual));
+            Console.WriteLine(string.Format(Resources.VolumeAtual, Volume);
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using MestreDosCodigos_POO_11.Interface;
+using MestreDosCodigos_Util.Resources;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MestreDosCodigos_POO_11.Model
 {
@@ -23,7 +22,7 @@ namespace MestreDosCodigos_POO_11.Model
                 this.Saldo += valor - this.TaxaDeOperacao;
             }
 
-            //throw new Exception("Operação Inválida, o valor deve ser maior do que a taxa de operação!");
+            throw new Exception(Resources.DepositoContaCorrentInvalido);
         }
 
         public override void Sacar(double valor)
@@ -33,14 +32,14 @@ namespace MestreDosCodigos_POO_11.Model
                 this.Saldo -= (valor + this.TaxaDeOperacao);
             }
 
-            //throw new Exception("Operação Inválida, o valor = a taxa de instalação não pode ser maior do que seu saldo!");
+            throw new Exception(Resources.SaqueContaCorrenteInvalido);
         }
 
         public void MostraDados()
         {
-            Console.WriteLine($"Número da conta: {this.NumeroConta}");
-            Console.WriteLine($"Saldo: R$ {this.Saldo}");
-            Console.WriteLine($"Taxa de Operação: R$ {this.TaxaDeOperacao}");
+            Console.WriteLine(string.Format(Resources.NumeroConta, NumeroConta));
+            Console.WriteLine(string.Format(Resources.Saldo, Saldo));
+            Console.WriteLine(string.Format(Resources.TaxaOperacao, TaxaDeOperacao));
             Console.WriteLine();
         }
     }
