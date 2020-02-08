@@ -21,6 +21,7 @@ Aqui serão listadas todas as questões, suas respostas (perguntas teóricas) e 
 * _Plataformas - Suporte para macOS e Linux_
 * _Software Livre - Todo .NET Core é um software livre_
 
+### Para executar os Exercícios, basta clonar o repositório e abri-lo no Visual Studio. Para cada exercício foi criado um projeto separado.
 ## Trabalhando no Console
 
 1. Crie uma aplicação, que receba os valores A e B. Mostre de forma simples, como utilizar variáveis e manipular dados.
@@ -71,24 +72,31 @@ Aqui serão listadas todas as questões, suas respostas (perguntas teóricas) e 
 ## Utilizando POO
 
 1. Responda e demonstre no código os itens abaixo:
-* O que é POO?
-** Programação Orientada a Objetos. É um padrão de desenvolvimento que é seguidos por muitas linguagens como C# e Java. E outras palavras, POO é um paradigma de programação baseado no conceito de objetos, que contém dados na forma de campos (atributos) e procedimentos na forma de métodos. Tais objetos podem interagir entre si.
-* O que é polimorfismo?
-** É um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma de suas classes derivadas.	
+
+O que é POO?
+* Programação Orientada a Objetos. É um padrão de desenvolvimento que é seguidos por muitas linguagens como C# e Java. E outras palavras, POO é um paradigma de programação baseado no conceito de objetos, que contém dados na forma de campos (atributos) e procedimentos na forma de métodos. Tais objetos podem interagir entre si.
+
+O que é polimorfismo?
+* É um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma de suas classes derivadas.	
 Por exemplo, temos 3 contas, ContaA, ContaB e ContaC, e cada uma tem uma Taxa diferente. Sendo assim, todas as contas derivariam da classe Taxa, e implementariam da maneira mais cabível o cálculo da taxa. 
-* O que é abstração?
-** Abstração é a habilidade de concentrar nos aspectos essenciais de um contexto qualquer, ignorando características menos importantes ou acidentais. No aspecto de POO, uma classe abstrata é desenvolvida para representar entidades e conceitos abstratos. A classe abstrata é sempre uma superclasse que não possui instâncias. Ela define um modelo (template) para uma funcionalidade e fornece uma implementação incompleta - a parte genérica dessa funcionalidade - que é compartilhada por um grupo de classes derivadas. Cada uma das classes derivadas, completa a funcionalidade da classe abstrata adicionando um comportamento específico.	
+
+O que é abstração?
+* Abstração é a habilidade de concentrar nos aspectos essenciais de um contexto qualquer, ignorando características menos importantes ou acidentais. No aspecto de POO, uma classe abstrata é desenvolvida para representar entidades e conceitos abstratos. A classe abstrata é sempre uma superclasse que não possui instâncias. Ela define um modelo (template) para uma funcionalidade e fornece uma implementação incompleta - a parte genérica dessa funcionalidade - que é compartilhada por um grupo de classes derivadas. Cada uma das classes derivadas, completa a funcionalidade da classe abstrata adicionando um comportamento específico.	
 É utilizada para a definição de entidades do mundo real. Sendo onde são criadas as classes. Essas entidades são consideradas tudo que é real, tendo como consideração as suas características e ações.
-* O que é encapsulamento?
-** É a técnica utilizada para esconder uma ideia, ou seja, não expôr detalhes internos para o usuário, tornando partes do sistema mais independentes possível. Por exemplo, quando um controle remoto estraga apenas é trocado ou consertado o controle e não a televisão inteira. Em POO, utiliza-se atributos privados, e getters e setters para acessar os mesmos.
-* Quando usar uma classe abstrata e quando devo usar uma interface?
-** Uma interface não possui implementação, apenas assinatura. A interface indica o que deve ser implementado. É como se fosse um contrato, que indica o que deve ser cumprido. Já as classes abstratas servem como uma classe base, que pode conter atributos e métodos completos. Porém, um ou mais destes métodos devem ser incompletos.
-* O que faz as interfaces IDisposable, IComparable, ICloneable e IEnumerable?
-** IDisposable: Fornece um mecanismo para liberar recursos não gerenciados.
-** IComparable: Define um método de comparação de tipo específico generalizado que implementa uma classe ou um tipo de valor para solicitar ou classificar suas instâncias.
-** ICloneable: Dá suporte à clonagem, que cria uma nova instância de uma classe com o mesmo valor de uma instância existente.** IEnumerable: Expõe um enumerador que dá suporte a uma iteração simples em uma coleção não genérica.
-* Existe herança múltipla (de classes) em C#?
-** Não
+
+O que é encapsulamento?
+* É a técnica utilizada para esconder uma ideia, ou seja, não expôr detalhes internos para o usuário, tornando partes do sistema mais independentes possível. Por exemplo, quando um controle remoto estraga apenas é trocado ou consertado o controle e não a televisão inteira. Em POO, utiliza-se atributos privados, e getters e setters para acessar os mesmos.
+
+Quando usar uma classe abstrata e quando devo usar uma interface?
+* Uma interface não possui implementação, apenas assinatura. A interface indica o que deve ser implementado. É como se fosse um contrato, que indica o que deve ser cumprido. Já as classes abstratas servem como uma classe base, que pode conter atributos e métodos completos. Porém, um ou mais destes métodos devem ser incompletos.
+
+O que faz as interfaces IDisposable, IComparable, ICloneable e IEnumerable?
+* IDisposable: Fornece um mecanismo para liberar recursos não gerenciados.
+* IComparable: Define um método de comparação de tipo específico generalizado que implementa uma classe ou um tipo de valor para solicitar ou classificar suas instâncias.
+* ICloneable: Dá suporte à clonagem, que cria uma nova instância de uma classe com o mesmo valor de uma instância existente.* IEnumerable: Expõe um enumerador que dá suporte a uma iteração simples em uma coleção não genérica.
+
+Existe herança múltipla (de classes) em C#?
+* Não
 
 2. Crie uma classe para representar uma pessoa
 * Crie os atributos privados de nome, data de nascimento e altura.
