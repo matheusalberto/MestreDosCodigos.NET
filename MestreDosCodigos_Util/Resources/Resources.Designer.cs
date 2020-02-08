@@ -88,6 +88,15 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Operação Inválida, o valor deve ser maior do que 0!.
+        /// </summary>
+        public static string DepositoContaEspecialInvalido {
+            get {
+                return ResourceManager.GetString("DepositoContaEspecialInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Número da Conta: {0}.
         /// </summary>
         public static string NumeroConta {
@@ -111,6 +120,15 @@ namespace MestreDosCodigos_Util.Resources {
         public static string SaqueContaCorrenteInvalido {
             get {
                 return ResourceManager.GetString("SaqueContaCorrenteInvalido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Operação Inválida, o valor desejado ultrapassa seu limite!.
+        /// </summary>
+        public static string SaqueContaEspecialInvalido {
+            get {
+                return ResourceManager.GetString("SaqueContaEspecialInvalido", resourceCulture);
             }
         }
         

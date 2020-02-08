@@ -23,17 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_Console_8"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_Console_9", "MestreDosCodigos_Console_9\MestreDosCodigos_Console_9.csproj", "{2DACEB59-F37D-47DD-AD42-BA2F7002B81F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_10", "MestreDosCodigos_POO_9\MestreDosCodigos_POO_10.csproj", "{3B5E6109-D827-439C-A0F9-1844FDE1AED9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_2", "MestreDosCodigos_POO_2\MestreDosCodigos_POO_2.csproj", "{3B5E6109-D827-439C-A0F9-1844FDE1AED9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_11", "MestreDosCodigos_POO_11\MestreDosCodigos_POO_11.csproj", "{7A94C4BB-C701-4DA5-919A-0BE0863F3461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_3", "MestreDosCodigos_POO_3\MestreDosCodigos_POO_3.csproj", "{7A94C4BB-C701-4DA5-919A-0BE0863F3461}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_12", "MestreDosCodigos_POO_12\MestreDosCodigos_POO_12.csproj", "{1CE4AF3B-C6D7-4E4E-BA5D-A90DED132096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_4", "MestreDosCodigos_POO_4\MestreDosCodigos_POO_4.csproj", "{1CE4AF3B-C6D7-4E4E-BA5D-A90DED132096}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_Testes_MSTest", "MestreDosCodigos_Testes\MestreDosCodigos_Testes_MSTest.csproj", "{06662D6E-977C-4F3D-8516-8DA0BB6ACAE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_Testes_MSTest", "MestreDosCodigos_Testes_MSTest\MestreDosCodigos_Testes_MSTest.csproj", "{06662D6E-977C-4F3D-8516-8DA0BB6ACAE0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_Testes_XUnit", "MestreDosCodigos_Testes_XUnit\MestreDosCodigos_Testes_XUnit.csproj", "{60F53CF4-5F63-4F78-B6C0-5DC48C9E95FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MestreDosCodigos_POO_Conceitos", "MestreDosCodigos_POO_Conceitos\MestreDosCodigos_POO_Conceitos.csproj", "{1A0DC18E-36AF-45D7-81C3-021ED4CB967C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MestreDosCodigos_POO_1_Conceitos", "MestreDosCodigos_POO_1_Conceitos\MestreDosCodigos_POO_1_Conceitos.csproj", "{1A0DC18E-36AF-45D7-81C3-021ED4CB967C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

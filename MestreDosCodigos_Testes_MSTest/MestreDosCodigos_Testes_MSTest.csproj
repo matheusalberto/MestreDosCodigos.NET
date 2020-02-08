@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -9,9 +9,10 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
-    <PackageReference Include="xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,10 +25,7 @@
     <ProjectReference Include="..\MestreDosCodigos_Console_7\MestreDosCodigos_Console_7.csproj" />
     <ProjectReference Include="..\MestreDosCodigos_Console_8\MestreDosCodigos_Console_8.csproj" />
     <ProjectReference Include="..\MestreDosCodigos_Console_9\MestreDosCodigos_Console_9.csproj" />
-    <ProjectReference Include="..\MestreDosCodigos_POO_2\MestreDosCodigos_POO_2.csproj" />
     <ProjectReference Include="..\MestreDosCodigos_POO_3\MestreDosCodigos_POO_3.csproj" />
-    <ProjectReference Include="..\MestreDosCodigos_POO_4\MestreDosCodigos_POO_4.csproj" />
-    <ProjectReference Include="..\MestreDosCodigos_Util\MestreDosCodigos_Util.csproj" />
   </ItemGroup>
 
 </Project>

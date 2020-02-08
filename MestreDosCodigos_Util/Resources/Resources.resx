@@ -126,6 +126,9 @@
   <data name="DepositoContaCorrentInvalido" xml:space="preserve">
     <value>Operação Inválida, o valor deve ser maior do que a taxa de operação!</value>
   </data>
+  <data name="DepositoContaEspecialInvalido" xml:space="preserve">
+    <value>Operação Inválida, o valor deve ser maior do que 0!</value>
+  </data>
   <data name="NumeroConta" xml:space="preserve">
     <value>Número da Conta: {0}</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="SaqueContaCorrenteInvalido" xml:space="preserve">
     <value>Operação Inválida, o valor + a taxa de instalação não pode ser maior do que seu saldo!</value>
+  </data>
+  <data name="SaqueContaEspecialInvalido" xml:space="preserve">
+    <value>Operação Inválida, o valor desejado ultrapassa seu limite!</value>
   </data>
   <data name="TaxaOperacao" xml:space="preserve">
     <value>Taxa de Operação: R$ {0}</value>
