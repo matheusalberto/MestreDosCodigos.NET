@@ -27,8 +27,8 @@ namespace MestreDosCodigos_Console_5
                 var r1 = (-b + delta) / 2 * a;
                 var r2 = (-b - delta) / 2 * a;
 
-                Console.WriteLine(string.Format("Digite R1: {0}", r1));
-                Console.WriteLine(string.Format("Digite R2: {0}", r2));
+                Console.WriteLine(string.Format("R1: {0}", r1));
+                Console.WriteLine(string.Format("R2: {0}", r2));
             }
             catch (Exception ex)
             {
