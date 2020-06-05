@@ -6,7 +6,7 @@ namespace MestreDosCodigos_POO_1_Conceitos.Dispose
     {
         public void Dispose()
         {
-            //Os recursos do objeto serão liberados.
+            // Os recursos do objeto serão liberados.
             Dispose();
         }
     }

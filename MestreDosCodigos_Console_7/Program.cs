@@ -14,12 +14,12 @@ namespace MestreDosCodigos_Console_7
 
                 for (int i = 1; i <= qtdeNumeros; i++)
                 {
-                    Console.Write(string.Format("Digite o número {0}:", i));
-                    var numeroDigitado = Console.ReadLine().toInt();
-                    result += numeroDigitado.isPair() ? numeroDigitado : 0;
+                    Console.Write($"Digite o número {i}:");
+                    var numeroDigitado = OperacoesConsole.ObterInteiro();
+                    result += numeroDigitado % 2 == 0 ? numeroDigitado : 0;
                 }
 
-                Console.WriteLine(string.Format("A soma dos pares é de: {0}", result));
+                Console.WriteLine($"A soma dos pares é de: {result}");
             }
             catch (Exception ex)
             {

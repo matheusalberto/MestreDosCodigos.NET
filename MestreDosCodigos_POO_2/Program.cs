@@ -8,12 +8,12 @@ namespace MestreDosCodigos_POO_9
         static void Main(string[] args)
         {
             var pessoa = new Pessoa();
-            pessoa.setNome("José Pereira");
-            pessoa.setAltura(170);
-            pessoa.setDataNascimento(new DateTime(1995, 12, 12));
+            pessoa.SetNome("José Pereira");
+            pessoa.SetAltura(170);
+            pessoa.SetDataNascimento(new DateTime(1995, 12, 12));
 
-            pessoa.showDados();
-            Console.Write(string.Format("Idade: {0}", pessoa.getIdade()));
+            pessoa.MostrarDados();
+            Console.Write($"Idade: {pessoa.GetIdade()}");
         }
     }
 }

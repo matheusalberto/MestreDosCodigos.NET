@@ -32,7 +32,7 @@ namespace MestreDosCodigos_POO_1_Conceitos.ExemplosInterfaces.Disposable
         protected void Dispose(bool disposing)
         {
             // Verifique se Dispose já foi chamado, evitando liberar o recurso 2x
-            if (!this.disposed)
+            if (!disposed)
             {
                 if (disposing)
                 {
@@ -50,8 +50,8 @@ namespace MestreDosCodigos_POO_1_Conceitos.ExemplosInterfaces.Disposable
         {
             Dispose(true);
 
-            //Este códgo indica que o garbagge collector não deve chamar o método 
-            //finalizador da classe, pois estamos controlando isso manualmente
+            // Este códgo indica que o garbagge collector não deve chamar o método 
+            // finalizador da classe, pois estamos controlando isso manualmente
             GC.SuppressFinalize(this);
         }
     }

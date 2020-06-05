@@ -14,6 +14,6 @@ namespace MestreDosCodigos_POO_1_Conceitos.ExemplosInterfaces.Cloneable
         private string Sobrenome { get; set; }
         private int Idade { get; set; }
 
-        public object Clone() => new Pessoa(this.Nome, this.Sobrenome, this.Idade);
+        public object Clone() => new Pessoa(Nome, Sobrenome, Idade);
     }
 }

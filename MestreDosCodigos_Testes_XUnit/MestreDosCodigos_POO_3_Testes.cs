@@ -116,7 +116,7 @@ namespace MestreDosCodigos_Testes_XUnit
             }
             catch(Exception ex)
             {
-                var erroEsperado = string.Format(Resources.CanalInexistente, canalIndicado);
+                var erroEsperado = $"{Resources.Canal} {canalIndicado} {Resources.Inexistente}";
                 ex.Message.Should().Be(erroEsperado);
             }            
         }

@@ -11,15 +11,15 @@ namespace MestreDosCodigos_Console_8
         {
             try
             {
-                List<int> lista = new List<int>();
+                var lista = new List<int>();
                 Console.WriteLine("Digite o número N:");
-                var strN = Console.ReadLine();
+                var N = OperacoesConsole.ObterInteiro();
 
-                for (int i = 0; i < strN.toInt(); i++)
+                for (int i = 0; i < N; i++)
                 {
                     Console.WriteLine($"Digite o número {i + 1}:");
-                    var valor = Console.ReadLine();
-                    lista.Add(valor.toInt());
+                    var valor = OperacoesConsole.ObterInteiro();
+                    lista.Add(valor);
                 }
                 lista = insertionSort(lista);
 

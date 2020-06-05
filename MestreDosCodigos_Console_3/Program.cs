@@ -1,5 +1,4 @@
-﻿using MestreDosCodigos_Util;
-using System;
+﻿using System;
 
 namespace MestreDosCodigos_Console_3
 {
@@ -12,11 +11,12 @@ namespace MestreDosCodigos_Console_3
 
             while (contador < valorMaximo)
             {
-                if (contador.isMultipleThree())
+                var contadorEhMultiploDeTres = contador % 3 == 0;
+                if (contadorEhMultiploDeTres)
                 {
-                    Console.Write(string.Format("{0} - ", contador));
+                    Console.Write($"{contador} - ");
                 }
-                contador++;
+                contador += 1;
             }
         }
     }

@@ -8,27 +8,23 @@ namespace MestreDosCodigos_Console_5
         public static void Main(string[] args)
         {
             Console.Write("Digite A:");
-            var strA = Console.ReadLine();
+            var a = OperacoesConsole.ObterInteiro();
 
             Console.Write("Digite B:");
-            var strB = Console.ReadLine();
+            var b = OperacoesConsole.ObterInteiro();
 
             Console.Write("Digite C:");
-            var strC = Console.ReadLine();
+            var c = OperacoesConsole.ObterInteiro();
 
             try
             {
-                int a = strA.toInt();
-                int b = strB.toInt();
-                int c = strC.toInt();
+                var delta = b * b - 4 * a * c;
 
-                var delta = Math.Sqrt(b * b - 4 * a * c);
+                var r1 = (-b + Math.Sqrt(delta)) / 2 * a;
+                var r2 = (-b - Math.Sqrt(delta)) / 2 * a;
 
-                var r1 = (-b + delta) / 2 * a;
-                var r2 = (-b - delta) / 2 * a;
-
-                Console.WriteLine(string.Format("R1: {0}", r1));
-                Console.WriteLine(string.Format("R2: {0}", r2));
+                Console.WriteLine($"R1: {r1}");
+                Console.WriteLine($"R2: {r2}");
             }
             catch (Exception ex)
             {

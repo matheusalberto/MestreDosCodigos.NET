@@ -9,15 +9,15 @@ namespace MestreDosCodigos_Console_9
     {
         public static void Main(string[] args)
         {
-            List<int> lista = new List<int>();
+            var lista = new List<int>();
             Console.WriteLine("Digite o número N:");
-            var strN = Console.ReadLine();
+            var N = OperacoesConsole.ObterInteiro();
 
-            for (int i = 0; i < strN.toInt(); i++)
+            for (int i = 0; i < N; i++)
             {
                 Console.WriteLine($"Digite o número {i + 1}:");
-                var valor = Console.ReadLine();
-                lista.Add(valor.toInt());
+                var valor = OperacoesConsole.ObterInteiro();
+                lista.Add(valor);
             }
 
             Console.WriteLine("Lista Original:");
@@ -52,7 +52,7 @@ namespace MestreDosCodigos_Console_9
             Console.WriteLine(mostrarLista(lista));
 
             Console.WriteLine("Apenas pares:");
-            Console.WriteLine(mostrarLista(lista.Where(x => x.isPair()).ToList()));
+            Console.WriteLine(mostrarLista(lista.Where(x => x % 2 == 0).ToList()));
 
             Console.WriteLine("Todos os elementos da lista em um Array: " + lista.ToArray());
         }

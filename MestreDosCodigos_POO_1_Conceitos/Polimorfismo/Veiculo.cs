@@ -6,7 +6,7 @@
 
         public Veiculo(string tipo)
         {
-            this.Tipo = tipo;
+            Tipo = tipo;
         }
 
         public virtual void Mover() { }

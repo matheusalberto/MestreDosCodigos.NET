@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CanalAtual" xml:space="preserve">
-    <value>Canal Atual: {0}</value>
+  <data name="Canal" xml:space="preserve">
+    <value>Canal</value>
   </data>
-  <data name="CanalInexistente" xml:space="preserve">
-    <value>Canal {0} Inexistente</value>
+  <data name="CanalAtual" xml:space="preserve">
+    <value>Canal Atual: </value>
   </data>
   <data name="DepositoContaCorrentInvalido" xml:space="preserve">
     <value>Operação Inválida, o valor deve ser maior do que a taxa de operação!</value>
@@ -129,11 +129,14 @@
   <data name="DepositoContaEspecialInvalido" xml:space="preserve">
     <value>Operação Inválida, o valor deve ser maior do que 0!</value>
   </data>
+  <data name="Inexistente" xml:space="preserve">
+    <value>Inexistente</value>
+  </data>
   <data name="NumeroConta" xml:space="preserve">
-    <value>Número da Conta: {0}</value>
+    <value>Número da Conta: </value>
   </data>
   <data name="Saldo" xml:space="preserve">
-    <value>Saldo: R$ {0}</value>
+    <value>Saldo: R$ </value>
   </data>
   <data name="SaqueContaCorrenteInvalido" xml:space="preserve">
     <value>Operação Inválida, o valor + a taxa de instalação não pode ser maior do que seu saldo!</value>
@@ -142,9 +145,9 @@
     <value>Operação Inválida, o valor desejado ultrapassa seu limite!</value>
   </data>
   <data name="TaxaOperacao" xml:space="preserve">
-    <value>Taxa de Operação: R$ {0}</value>
+    <value>Taxa de Operação: R$ </value>
   </data>
   <data name="VolumeAtual" xml:space="preserve">
-    <value>Volume: {0}</value>
+    <value>Volume: </value>
   </data>
 </root>

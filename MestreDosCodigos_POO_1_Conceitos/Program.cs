@@ -14,7 +14,7 @@ namespace MestreDosCodigos_POO_1_Conceitos
     {
         static void Main(string[] args)
         {
-            //Polimorfismo
+            // Polimorfismo
             Veiculo[] veiculo = new Veiculo[2];
 
             veiculo[0] = new Automovel("Ferrari");
@@ -23,43 +23,43 @@ namespace MestreDosCodigos_POO_1_Conceitos
             veiculo[0].Mover();
             veiculo[1].Mover();
 
-            //Abstração
+            // Abstração
             var quadrado = new Quadrado(10);
             quadrado.CalcularArea();
             quadrado.CalcularPerimetro();
             Console.WriteLine($"Area: {quadrado.Area}");
             Console.WriteLine($"Perímetro: {quadrado.Perimetro}");
 
-            //Encapsulamento
+            // Encapsulamento
             var conta = new Conta();
-            //conta.Saldo = 100; - Não consido usar
+            // conta.Saldo = 100; -Não consido usar
             conta.Depositar(100);
 
-            //IDisposable: Fornece um mecanismo para liberar recursos não gerenciados. 
+            // IDisposable: Fornece um mecanismo para liberar recursos não gerenciados. 
             LogWriter log = new LogWriter("ArquivoLog.txt");
             log.Dispose();
 
-            //IComparable: Define um método de comparação de tipo específico generalizado que implementa uma classe ou um tipo de valor para solicitar ou classificar suas instâncias.
+            // IComparable: Define um método de comparação de tipo específico generalizado que implementa uma classe ou um tipo de valor para solicitar ou classificar suas instâncias.
             var listaTemperaturas = new List<Temperatura>();
             Random rnd = new Random();
             for (int i = 0; i < 10; i++)
             {
-                int graus = rnd.Next(0, 100);
+                int temperatura = rnd.Next(0, 100);
                 Temperatura temp = new Temperatura();
-                temp.Fahrenheit = graus;
+                temp.Fahrenheit = temperatura;
                 listaTemperaturas.Add(temp);
             }
 
-            listaTemperaturas.Sort(); //O comparador padrão agora é o que implementamos
+            listaTemperaturas.Sort(); // O comparador padrão agora é o que implementamos
 
             foreach (Temperatura temp in listaTemperaturas)
                 Console.WriteLine(temp.Fahrenheit);
 
-            //ICloneable
+            // ICloneable
             var jose = new Pessoa("José", "Santana", 33);
             var joseClone = jose.Clone();
 
-            //IEnumerable
+            // IEnumerable
             var cesta = new Cesta(new string[] { "Banana", "Abacaxi", "Uva" });
             foreach(var fruta in cesta)
             {

@@ -4,7 +4,7 @@ namespace MestreDosCodigos_POO_1_Conceitos.Dispose
 {
     public class Temperatura : IComparable
     {
-        protected double temperaturaF;
+        protected double TemperaturaF;
 
         public int CompareTo(object obj)
         {
@@ -12,7 +12,7 @@ namespace MestreDosCodigos_POO_1_Conceitos.Dispose
 
             Temperatura outraTemperatura = obj as Temperatura;
             if (outraTemperatura != null)
-                return this.temperaturaF.CompareTo(outraTemperatura.temperaturaF);
+                return TemperaturaF.CompareTo(outraTemperatura.TemperaturaF);
             else
                 throw new ArgumentException("Objeto inválido, não é temperatura");
         }
@@ -21,23 +21,11 @@ namespace MestreDosCodigos_POO_1_Conceitos.Dispose
         {
             get
             {
-                return this.temperaturaF;
+                return TemperaturaF;
             }
             set
             {
-                this.temperaturaF = value;
-            }
-        }
-
-        public double Celsius
-        {
-            get
-            {
-                return (this.temperaturaF - 32) * (5.0 / 9);
-            }
-            set
-            {
-                this.temperaturaF = (value * 9.0 / 5) + 32;
+                TemperaturaF = value;
             }
         }
     }

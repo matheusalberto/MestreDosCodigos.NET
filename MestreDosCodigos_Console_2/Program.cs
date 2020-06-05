@@ -11,18 +11,17 @@ namespace MestreDosCodigos_Console_2
             try
             {
                 Console.WriteLine("Digite o número de funcionários:");
-                var strQtdeFuncionarios = Console.ReadLine();
-                var qtdeFuncionarios = strQtdeFuncionarios.toInt();
-                List<int> salarios = new List<int>();
+                var qtdeFuncionarios = OperacoesConsole.ObterInteiro();
+                var salarios = new List<int>();
 
                 int contadorFuncionario = 1;
                 while (qtdeFuncionarios > 0)
                 {
-                    Console.WriteLine(string.Format("Informe o salário do funcionário {0}:", contadorFuncionario++));
-                    var strSalario = Console.ReadLine();
-                    var salario = strSalario.toInt();
+                    Console.WriteLine($"Informe o salário do funcionário {contadorFuncionario}:");
+                    var salario = OperacoesConsole.ObterInteiro();
                     salarios.Add(salario);
-                    qtdeFuncionarios--;
+                    contadorFuncionario += 1;
+                    qtdeFuncionarios -= 1;
                 }
 
                 var maiorSalario = 0;
@@ -34,8 +33,8 @@ namespace MestreDosCodigos_Console_2
                     if (valorSalario < menorSalario) menorSalario = valorSalario;
                 }
 
-                Console.WriteLine(string.Format("O maior sálario é de: {0}", maiorSalario));
-                Console.WriteLine(string.Format("O menor sálario é de: {0}", menorSalario));
+                Console.WriteLine($"O maior sálario é de: {maiorSalario}");
+                Console.WriteLine($"O menor sálario é de: {menorSalario}");
             }
             catch (Exception ex)
             {

@@ -10,16 +10,16 @@ namespace MestreDosCodigos_POO_3.Model
 
         public ContaCorrente(double taxaDeOperacao, double saldo, int numeroConta)
         {
-            this.TaxaDeOperacao = taxaDeOperacao;
-            this.Saldo = saldo;
-            this.NumeroConta = numeroConta;
+            TaxaDeOperacao = taxaDeOperacao;
+            Saldo = saldo;
+            NumeroConta = numeroConta;
         }
 
         public override void Depositar(double valor)
         {
-            if (valor - this.TaxaDeOperacao > 0)
+            if (valor - TaxaDeOperacao > 0)
             {
-                this.Saldo += valor - this.TaxaDeOperacao;
+                Saldo += valor - TaxaDeOperacao;
                 return;
             }
 
@@ -28,9 +28,9 @@ namespace MestreDosCodigos_POO_3.Model
 
         public override void Sacar(double valor)
         {
-            if ((valor + this.TaxaDeOperacao) <= this.Saldo)
+            if ((valor + TaxaDeOperacao) <= Saldo)
             {
-                this.Saldo -= (valor + this.TaxaDeOperacao);
+                Saldo -= (valor + TaxaDeOperacao);
                 return;
             }
 
@@ -39,9 +39,9 @@ namespace MestreDosCodigos_POO_3.Model
 
         public void MostraDados()
         {
-            Console.WriteLine(string.Format(Resources.NumeroConta, NumeroConta));
-            Console.WriteLine(string.Format(Resources.Saldo, Saldo));
-            Console.WriteLine(string.Format(Resources.TaxaOperacao, TaxaDeOperacao));
+            Console.WriteLine($"{Resources.NumeroConta} {NumeroConta}");
+            Console.WriteLine($"{Resources.Saldo} {Saldo}");
+            Console.WriteLine($"{Resources.TaxaOperacao} {TaxaDeOperacao}");
             Console.WriteLine();
         }
     }

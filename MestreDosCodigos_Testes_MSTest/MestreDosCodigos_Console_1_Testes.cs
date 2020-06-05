@@ -7,13 +7,12 @@ namespace MestreDosCodigos_Console_1_Testes
     public class MestreDosCodigos_Console_1_Testes
     {
         [TestMethod]
-        public void OperacaoSomaOk()
+        [DataRow(10, 12, 22)]
+        [DataRow(45, 15, 60)]
+        [DataRow(100, 15, 115)]
+        public void TestesSomaOk(int valor1, int valor2, int valorEsperado)
         {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 13;
-
-            var operacao = new Operacao(a, b);
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Somar();
 
@@ -21,26 +20,25 @@ namespace MestreDosCodigos_Console_1_Testes
         }
 
         [TestMethod]
-        public void OperacaoSomaFalha()
+        [DataRow(10, 12, 222)]
+        [DataRow(45, 15, 4515)]
+        [DataRow(100, 15, 10015)]
+        public void TestesSomaFalha(int valor1, int valor2, int valorEsperado)
         {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 123;
-
-            var operacao = new Operacao(a, b);
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Somar();
 
             Assert.AreNotEqual(valorEsperado, resultado);
         }
-        [TestMethod]
-        public void OperacaoMultiplicacaoOk()
-        {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 30;
 
-            var operacao = new Operacao(a, b);
+        [TestMethod]
+        [DataRow(10, 12, 120)]
+        [DataRow(10, 15, 150)]
+        [DataRow(100, 10, 1000)]
+        public void TestesMultiplicacaoOk(int valor1, int valor2, int valorEsperado)
+        {
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Multiplicar();
 
@@ -48,26 +46,25 @@ namespace MestreDosCodigos_Console_1_Testes
         }
 
         [TestMethod]
-        public void OperacaoMultiplicacaoFalha()
+        [DataRow(10, 12, 222)]
+        [DataRow(45, 15, 4515)]
+        [DataRow(100, 15, 10015)]
+        public void TestesMultiplicacaoFalha(int valor1, int valor2, int valorEsperado)
         {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 123;
-
-            var operacao = new Operacao(a, b);
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Multiplicar();
 
             Assert.AreNotEqual(valorEsperado, resultado);
         }
-        [TestMethod]
-        public void OperacaoSubtracaoOk()
-        {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 7;
 
-            var operacao = new Operacao(a, b);
+        [TestMethod]
+        [DataRow(10, 12, -2)]
+        [DataRow(10, 15, -5)]
+        [DataRow(100, 10, 90)]
+        public void TestesSubtracaoOk(int valor1, int valor2, int valorEsperado)
+        {
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Subtrair();
 
@@ -75,26 +72,25 @@ namespace MestreDosCodigos_Console_1_Testes
         }
 
         [TestMethod]
-        public void OperacaoSubtracaoFalha()
+        [DataRow(10, 12, 222)]
+        [DataRow(45, 15, 4515)]
+        [DataRow(100, 15, 10015)]
+        public void TestesSubtracaoFalha(int valor1, int valor2, int valorEsperado)
         {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 123;
-
-            var operacao = new Operacao(a, b);
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Subtrair();
 
             Assert.AreNotEqual(valorEsperado, resultado);
         }
-        [TestMethod]
-        public void OperacaoDivisaoOk()
-        {
-            int a = 2;
-            int b = 50;
-            int valorEsperado = 25;
 
-            var operacao = new Operacao(a, b);
+        [TestMethod]
+        [DataRow(2, 10, 5)]
+        [DataRow(4, 10, 2.5)]
+        [DataRow(10, 100, 10)]
+        public void TestesDivisaoOk(int valor1, int valor2, double valorEsperado)
+        {
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Dividir();
 
@@ -102,13 +98,12 @@ namespace MestreDosCodigos_Console_1_Testes
         }
 
         [TestMethod]
-        public void OperacaoDivisaoFalha()
+        [DataRow(10, 12, 222)]
+        [DataRow(45, 15, 4515)]
+        [DataRow(100, 15, 10015)]
+        public void TestesDivisaoFalha(int valor1, int valor2, int valorEsperado)
         {
-            int a = 50;
-            int b = 50;
-            int valorEsperado = 3;
-
-            var operacao = new Operacao(a, b);
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Dividir();
 

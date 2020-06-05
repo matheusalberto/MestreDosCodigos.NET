@@ -12,8 +12,8 @@ namespace MestreDosCodigos_POO_4.Model
 
         public void MostrarDados()
         {
-            Console.WriteLine(string.Format(Resources.CanalAtual, CanalAtual));
-            Console.WriteLine(string.Format(Resources.VolumeAtual, Volume));
+            Console.WriteLine($"{Resources.CanalAtual} {CanalAtual}");
+            Console.WriteLine($"{Resources.VolumeAtual} {Volume}");
         }
     }
 }

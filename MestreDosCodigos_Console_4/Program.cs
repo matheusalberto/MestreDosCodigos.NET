@@ -2,7 +2,6 @@
 using MestreDosCodigos_Util;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace MestreDosCodigos_Console_4
 {
@@ -11,33 +10,27 @@ namespace MestreDosCodigos_Console_4
         public static void Main(string[] args)
         {
             Console.WriteLine("Digite a quantidade de alunos:");
-            var strQtdeAlunos = Console.ReadLine();
+            var qtdeAlunos = OperacoesConsole.ObterInteiro();
 
             try
             {
-                var qtdeAlunos = strQtdeAlunos.toInt();
-                List<Aluno> alunos = new List<Aluno>();
-                var opcoes = Enumerable.Range(1, qtdeAlunos).ToList();
+                var alunos = new List<Aluno>();
+                var contadorAluno = 1;
 
-                foreach (var i in opcoes)
+                while (contadorAluno < qtdeAlunos)
                 {
-                    Console.WriteLine(string.Format("Digite o nome do aluno {0}: ", i));
+                    Console.WriteLine($"Digite o nome do aluno {contadorAluno}: ");
                     var nome = Console.ReadLine();
-                    Console.WriteLine(string.Format("Digite a nota do aluno {0} (entre 0 e 10): ", i));
-                    var nota = Console.ReadLine().toDouble();
 
-                    if (nota < 0 || nota > 10)
-                    {
-                        throw new Exception("Valor de Nota inválido, o valor deve estar entre 0 e 10");
-                    }
+                    Console.WriteLine($"Digite a nota do aluno {contadorAluno} (entre 0 e 10): ");
+                    var nota = OperacoesConsole.ObterNota();
 
                     var aluno = new Aluno(nome, nota);
                     alunos.Add(aluno);
                 }
 
-                Console.WriteLine("Os alunos com média superior a 7 são:");
+                Console.WriteLine("Os alunos com média superior a 7 são: ");
                 MostrarAlunosComMediaSuperior7(alunos);
-
             }
             catch (Exception ex)
             {
@@ -51,7 +44,7 @@ namespace MestreDosCodigos_Console_4
             {
                 if (aluno.TemNotaAzul())
                 {
-                    Console.WriteLine(string.Format("Aluno: {0} - Nota: {1}", aluno.Nome, aluno.Nota));
+                    Console.WriteLine($"Aluno: {aluno.Nome} - Nota: {aluno.Nota}");
                 }
             }
         }

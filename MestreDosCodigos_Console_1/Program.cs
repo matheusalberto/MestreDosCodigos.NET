@@ -10,12 +10,12 @@ namespace MestreDosCodigos
         static void Main(string[] args)
         {
             Console.WriteLine("Digite A:");
-            var strA = Console.ReadLine();
+            var valorA = OperacoesConsole.ObterInteiro();
 
             Console.WriteLine("Digite B:");
-            var strB = Console.ReadLine();
+            var valorB = OperacoesConsole.ObterInteiro();
 
-            var operacao = new Operacao(strA.toInt(), strB.toInt());
+            var operacao = new Operacao(valorA, valorB);
 
             try
             {
@@ -25,9 +25,9 @@ namespace MestreDosCodigos
                 Console.WriteLine("3. MULTIPLICAR");
                 Console.WriteLine("4. DIVIDIR");
                 Console.WriteLine("5. VERIFICAR PARIDADE");
-                var resp = Console.ReadLine();
+                var opcao = OperacoesConsole.ObterInteiro();
 
-                switch ((TipoOperacao)resp.toInt())
+                switch ((TipoOperacao)opcao)
                 {
                     case TipoOperacao.SOMAR:
                         Console.WriteLine($"A+B:{operacao.Somar()}");
@@ -42,12 +42,17 @@ namespace MestreDosCodigos
                         Console.WriteLine($"B/A:{operacao.Dividir()}");
                         break;
                     case TipoOperacao.VERIFICAR_PARIDADE:
-                        Console.WriteLine($"A ({operacao.A}) é {(operacao.A.isPair() ? "PAR" : "ÍMPAR")}");
-                        Console.WriteLine($"B ({operacao.B}) é {(operacao.B.isPair() ? "PAR" : "ÍMPAR")}");
+                        Console.WriteLine($"A ({operacao.A}) é {(operacao.A % 2 == 0 ? "PAR" : "ÍMPAR")}");
+                        Console.WriteLine($"B ({operacao.B}) é {(operacao.B % 2 == 0 ? "PAR" : "ÍMPAR")}");
                         break;
                     default:
-                        throw new Exception("Valor inválido");
+                        throw new Exception("Opção inválida");
                 }
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Não é possível fazer divisão por 0. Tente novamente");
+                Main(null);
             }
             catch (Exception ex)
             {

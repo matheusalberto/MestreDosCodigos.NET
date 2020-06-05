@@ -1,4 +1,5 @@
 ﻿using MestreDosCodigos_Util.Resources;
+using System;
 
 namespace MestreDosCodigos_POO_4.Model
 {
@@ -11,53 +12,53 @@ namespace MestreDosCodigos_POO_4.Model
 
         public void AumentarVolume()
         {
-            if (this.Televisao.Volume < VolumeMaximo)
+            if (Televisao.Volume < VolumeMaximo)
             {
-                this.Televisao.Volume++;
+                Televisao.Volume += 1;
             }
         }
         public void DiminuirVolume()
         {
-            if (this.Televisao.Volume > VolumeMinimo)
+            if (Televisao.Volume > VolumeMinimo)
             {
-                this.Televisao.Volume--;
+                Televisao.Volume -= 1;
             }
         }
 
         public void ProximoCanal()
         {
-            var canalAtualIndice = this.Televisao.Canais.FindIndex(x => x == this.Televisao.CanalAtual);
+            var canalAtualIndice = Televisao.Canais.FindIndex(x => x == Televisao.CanalAtual);
 
-            if (this.Televisao.Canais.Count - 1 != canalAtualIndice)
+            if (Televisao.Canais.Count - 1 != canalAtualIndice)
             {
-                this.Televisao.CanalAtual = this.Televisao.Canais[canalAtualIndice + 1];
+                Televisao.CanalAtual = Televisao.Canais[canalAtualIndice + 1];
                 return;
             }
 
-            this.Televisao.CanalAtual = this.Televisao.Canais[0];
+            Televisao.CanalAtual = Televisao.Canais[0];
         }
         public void VoltarCanal()
         {
-            var canalAtualIndice = this.Televisao.Canais.FindIndex(x => x == this.Televisao.CanalAtual);
+            var canalAtualIndice = Televisao.Canais.FindIndex(x => x == Televisao.CanalAtual);
 
             if (canalAtualIndice > 0)
             {
-                this.Televisao.CanalAtual = this.Televisao.Canais[canalAtualIndice - 1];
+                Televisao.CanalAtual = Televisao.Canais[canalAtualIndice - 1];
                 return;
             }
 
-            this.Televisao.CanalAtual = this.Televisao.Canais[this.Televisao.Canais.Count - 1];
+            Televisao.CanalAtual = Televisao.Canais[Televisao.Canais.Count - 1];
         }
 
         public void IndicarCanal(int canal)
         {
-            var canalExiste = this.Televisao.Canais.Exists(x => x == canal);
+            var canalExiste = Televisao.Canais.Exists(x => x == canal);
             if (!canalExiste)
             {
-                throw new System.Exception(string.Format(Resources.CanalInexistente, canal));
+                throw new Exception($"{Resources.Canal} {canal} {Resources.Inexistente}");
             }
 
-            this.Televisao.CanalAtual = canal;
+            Televisao.CanalAtual = canal;
         }
     }
 }

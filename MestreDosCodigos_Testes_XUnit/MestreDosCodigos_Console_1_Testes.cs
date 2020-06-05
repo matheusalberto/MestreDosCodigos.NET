@@ -6,14 +6,13 @@ namespace MestreDosCodigos_Testes_XUnit
 {
     public class MestreDosCodigos_Console_1_Testes
     {
-        [Fact]
-        public void OperacaoSomaOk()
+        [Theory]
+        [InlineData(5, 5, 10)]
+        [InlineData(56, 5, 61)]
+        [InlineData(5, 54, 59)]
+        public void TestesSomaOk(int valor1, int valor2, int valorEsperado)
         {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 13;
-
-            var operacao = new Operacao(a, b);
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Somar();
 
@@ -33,14 +32,14 @@ namespace MestreDosCodigos_Testes_XUnit
 
             resultado.Should().NotBe(valorEsperado);
         }
-        [Fact]
-        public void OperacaoMultiplicacaoOk()
-        {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 30;
 
-            var operacao = new Operacao(a, b);
+        [Theory]
+        [InlineData(5, 5, 25)]
+        [InlineData(56, 10, 560)]
+        [InlineData(9, 9, 81)]
+        public void TestesMultiplicacaoOk(int valor1, int valor2, int valorEsperado)
+        {
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Multiplicar();
 
@@ -60,14 +59,14 @@ namespace MestreDosCodigos_Testes_XUnit
 
             resultado.Should().NotBe(valorEsperado);
         }
-        [Fact]
-        public void OperacaoSubtracaoOk()
-        {
-            int a = 10;
-            int b = 3;
-            int valorEsperado = 7;
 
-            var operacao = new Operacao(a, b);
+        [Theory]
+        [InlineData(5, 5, 0)]
+        [InlineData(56, 10, 46)]
+        [InlineData(109, 11, 98)]
+        public void TestesSubtracaoOk(int valor1, int valor2, int valorEsperado)
+        {
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Subtrair();
 
@@ -87,14 +86,14 @@ namespace MestreDosCodigos_Testes_XUnit
 
             resultado.Should().NotBe(valorEsperado);
         }
-        [Fact]
-        public void OperacaoDivisaoOk()
-        {
-            int a = 2;
-            int b = 50;
-            int valorEsperado = 25;
 
-            var operacao = new Operacao(a, b);
+        [Theory]
+        [InlineData(5, 5, 1)]
+        [InlineData(10, 56, 5.6)]
+        [InlineData(4, 1000, 250)]
+        public void TestesDivisaoOk(int valor1, int valor2, double valorEsperado)
+        {
+            var operacao = new Operacao(valor1, valor2);
 
             var resultado = operacao.Dividir();
 

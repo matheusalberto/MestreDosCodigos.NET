@@ -10,16 +10,16 @@ namespace MestreDosCodigos_POO_3.Model
 
         public ContaEspecial(double limite, double saldo, int numeroConta)
         {
-            this.Limite = limite;
-            this.Saldo = saldo;
-            this.NumeroConta = numeroConta;
+            Limite = limite;
+            Saldo = saldo;
+            NumeroConta = numeroConta;
         }
 
         public override void Depositar(double valor)
         {
             if (valor > 0)
             {
-                this.Saldo += valor;
+                Saldo += valor;
                 return;
             }
 
@@ -28,10 +28,10 @@ namespace MestreDosCodigos_POO_3.Model
 
         public override void Sacar(double valor)
         {
-            var permiteSacar = (this.Saldo + this.Limite) >= valor;
+            var permiteSacar = (Saldo + Limite) >= valor;
             if (permiteSacar)
             {
-                this.Saldo -= valor;
+                Saldo -= valor;
                 return;
             }
 
@@ -40,9 +40,9 @@ namespace MestreDosCodigos_POO_3.Model
 
         public void MostraDados()
         {
-            Console.WriteLine($"Número da conta: {this.NumeroConta}");
-            Console.WriteLine($"Saldo: R$ {this.Saldo}");
-            Console.WriteLine($"Limite: R$ {this.Limite}");
+            Console.WriteLine($"Número da conta: {NumeroConta}");
+            Console.WriteLine($"Saldo: R$ {Saldo}");
+            Console.WriteLine($"Limite: R$ {Limite}");
             Console.WriteLine();
         }
     }

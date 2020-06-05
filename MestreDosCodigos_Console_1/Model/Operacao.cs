@@ -13,7 +13,7 @@
 
         public double Somar() => (A + B);
         public double Subtrair() => (A - B);
-        public double Dividir() => (B / A);
+        public double Dividir() => ((double)B / (double)A);
         public double Multiplicar() => (A * B);
     }
 }

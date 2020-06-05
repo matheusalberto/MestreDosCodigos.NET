@@ -61,20 +61,20 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Canal Atual: {0}.
+        ///   Looks up a localized string similar to Canal.
         /// </summary>
-        public static string CanalAtual {
+        public static string Canal {
             get {
-                return ResourceManager.GetString("CanalAtual", resourceCulture);
+                return ResourceManager.GetString("Canal", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Canal {0} Inexistente.
+        ///   Looks up a localized string similar to Canal Atual: .
         /// </summary>
-        public static string CanalInexistente {
+        public static string CanalAtual {
             get {
-                return ResourceManager.GetString("CanalInexistente", resourceCulture);
+                return ResourceManager.GetString("CanalAtual", resourceCulture);
             }
         }
         
@@ -97,7 +97,16 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Número da Conta: {0}.
+        ///   Looks up a localized string similar to Inexistente.
+        /// </summary>
+        public static string Inexistente {
+            get {
+                return ResourceManager.GetString("Inexistente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Número da Conta: .
         /// </summary>
         public static string NumeroConta {
             get {
@@ -106,7 +115,7 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Saldo: R$ {0}.
+        ///   Looks up a localized string similar to Saldo: R$ .
         /// </summary>
         public static string Saldo {
             get {
@@ -133,7 +142,7 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Taxa de Operação: R$ {0}.
+        ///   Looks up a localized string similar to Taxa de Operação: R$ .
         /// </summary>
         public static string TaxaOperacao {
             get {
@@ -142,7 +151,7 @@ namespace MestreDosCodigos_Util.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume: {0}.
+        ///   Looks up a localized string similar to Volume: .
         /// </summary>
         public static string VolumeAtual {
             get {

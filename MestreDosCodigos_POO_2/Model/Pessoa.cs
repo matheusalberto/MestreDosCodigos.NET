@@ -8,26 +8,26 @@ namespace MestreDosCodigos_POO_2.Model
         private DateTime DataNascimento;
         private int Altura;
 
-        public int getAltura() => this.Altura;
-        public DateTime getDataNascimento() => this.DataNascimento;
-        public string getNome() => this.Nome;
-        public void setAltura(int altura) => this.Altura = altura;
-        public void setDataNascimento(DateTime dataNascimento) => this.DataNascimento = dataNascimento;
-        public void setNome(string nome) => this.Nome = nome;
+        public int GetAltura() => Altura;
+        public void SetAltura(int altura) => Altura = altura;
+        public DateTime GetDataNascimento() => DataNascimento;
+        public void SetDataNascimento(DateTime dataNascimento) => DataNascimento = dataNascimento;
+        public string GetNome() => Nome;
+        public void SetNome(string nome) => Nome = nome;
 
-        public void showDados()
+        public void MostrarDados()
         {
-            Console.WriteLine(string.Format("Nome: {0}", this.Nome));
-            Console.WriteLine(string.Format("Altura: {0}cm", this.Altura));
-            Console.WriteLine(string.Format("Data Nascimento: {0}", this.DataNascimento.ToString("dd/MM/yyyy")));
+            Console.WriteLine($"Nome: {Nome}");
+            Console.WriteLine($"Altura: {Altura}cm");
+            Console.WriteLine($"Data Nascimento: {DataNascimento.ToString("dd/MM/yyyy")}");
         }
 
-        public int getIdade()
+        public int GetIdade()
         {
-            var idade = DateTime.Now.Year - this.DataNascimento.Year;
-            if (DateTime.Now.DayOfYear < this.DataNascimento.DayOfYear)
+            var idade = DateTime.Now.Year - DataNascimento.Year;
+            if (DateTime.Now.DayOfYear < DataNascimento.DayOfYear)
             {
-                idade--;
+                idade -= 1;
             }
 
             return idade;
